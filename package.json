@@ -1,0 +1,40 @@
+{
+  "name": "@inseong-so/frontend",
+  "version": "0.0.0",
+  "description": "Frontend for ${PROJECT}",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InSeong-So/Frontend.git"
+  },
+  "keywords": [
+    "자바스크립트",
+    "JavaScript"
+  ],
+  "author": "InSeong-So",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InSeong-So/Frontend/issues"
+  },
+  "homepage": "https://github.com/InSeong-So/Frontend#readme",
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@picocss/pico": "^1.5.2",
+    "cypress": "^10.0.3",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "vite": "^2.9.10"
+  }
+}
