@@ -18,3 +18,69 @@ button {
   font-size: 2em !important;
   font-weight: bold;
 }
+
+main>section {
+  margin-bottom: 40px !important;
+}
+
+main section:nth-child(2) {
+  margin-bottom: 0 !important;
+}
+
+form {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 0 !important;
+}
+
+section article {
+  margin: 40px 0 !important;
+}
+
+hr {
+  border-top: 5px solid #ffffff !important;
+  border-radius: 5px;
+}
+
+#counter-display>article {
+  padding: 0 !important;
+}
+
+#todo-input {
+  margin-top: 40px !important;
+  margin-bottom: 20px !important;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+#todo-content {
+  padding: 0 40px;
+  max-height: 280px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-content div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-action {
+  display: flex;
+  gap: 40px;
+}
+
+.todo-action span {
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 5px;
+}
