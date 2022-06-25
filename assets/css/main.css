@@ -19,16 +19,21 @@ button {
   font-weight: bold;
 }
 
+main {
+  height: calc(100vh - 40px);
+}
+
 main>section {
+  font-family: 'Courier New', Courier, monospace !important;
   margin-bottom: 40px !important;
 }
 
-main section:nth-child(2) {
+main section:nth-of-type(2) {
   margin-bottom: 0 !important;
 }
 
 form {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace !important;
   margin-bottom: 0 !important;
 }
 
@@ -41,11 +46,19 @@ hr {
   border-radius: 5px;
 }
 
+svg {
+  pointer-events: none !important;
+}
+
+#todo-area {
+  height: 437px;
+}
+
 #counter-display>article {
   padding: 0 !important;
 }
 
-#todo-input {
+#todo-input-section {
   margin-top: 40px !important;
   margin-bottom: 20px !important;
 }
@@ -83,4 +96,13 @@ hr {
   padding: 10px;
   background-color: #000000;
   border-radius: 5px;
+}
+
+.todo-action span:hover {
+  cursor: pointer;
+}
+
+.complete-todo :is(.todo-title, .complete) {
+  text-decoration: line-through;
+  color: green;
 }

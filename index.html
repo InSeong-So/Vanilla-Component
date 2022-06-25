@@ -5,51 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanilla-Counter</title>
+  <title>Vanilla-TODO-Counter</title>
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
   <main class="container">
-    <section>
-      <section id="counter-display">
-        <article>
-          <h1 id="counter">0</h1>
-        </article>
-      </section>
-      <section id="buttons">
-        <div class="grid">
-          <button id="sub">-1</button>
-          <button id="reset" class="contrast">RESET</button>
-          <button id="add" class="secondary">+1</button>
-        </div>
-      </section>
-    </section>
-    <hr />
-    <section>
-      <section id="todo-input">
+    <section id="todo-area">
+      <section id="todo-input-section">
         <div class="grid">
           <form>
-            <label for="text">Todo Input</label>
-            <input type="text" id="text" name="text" placeholder="please input to your todo">
+            <label for="todo-input">Todo Input</label>
+            <input type="text" id="todo-input" name="todo-input" required maxlength="50"
+              placeholder="please input to your todo">
           </form>
         </div>
       </section>
       <section id="todo-display">
         <article id="todo-content">
-          <div class="row">
+          <div class="row" key="todo-0">
             <div class="todo-title">
               <span>테스트</span>
             </div>
             <div class="todo-action">
-              <span>
+              <span class="complete">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-check">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </span>
-              <span>
+              <span class="remove">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="feather feather-trash-2">
@@ -62,6 +48,21 @@
             </div>
           </div>
         </article>
+      </section>
+    </section>
+    <hr />
+    <section>
+      <section id="counter-display">
+        <article>
+          <h1 id="counter">0</h1>
+        </article>
+      </section>
+      <section id="buttons">
+        <div class="grid">
+          <button id="sub">-1</button>
+          <button id="reset" class="contrast">RESET</button>
+          <button id="add" class="secondary">+1</button>
+        </div>
       </section>
     </section>
   </main>
